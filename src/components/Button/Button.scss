@@ -1,0 +1,61 @@
+.Button {
+  font-size: 20px;
+  text-transform: uppercase;
+  height: 57px;
+  width: 350px;
+  background-color: #1A3B7A;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  display: block;
+  margin: 2.5px 0 2.5px 0;
+}
+
+.Button:hover {
+  background-color: #081958;
+  cursor: pointer;
+}
+
+.Button:focus {
+  outline: 0;
+  border: 2px solid #081958;
+}
+
+.Button:disabled {
+  pointer-events: none;
+  background-color: grey;
+}
+
+.Button--add {
+  @extend .Button;
+
+  background-color: #74BA00;
+}
+
+.Button--add:hover {
+  background-color: #529800;
+}
+
+.Button--add:focus {
+  border: 2px solid #529800;
+}
+
+.Button--delete {
+  @extend .Button;
+
+  background-color: #FF5916;
+}
+
+.Button--delete:hover {
+  background-color: #DD3704;
+}
+
+.Button--delete:focus {
+  border: 2px solid #DD3704;
+}
+
+.Button--small {
+  @extend .Button;
+
+  width: 175px;
+}

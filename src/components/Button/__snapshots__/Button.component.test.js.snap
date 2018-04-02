@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders a default button 1`] = `
+<button
+  className="Button "
+  onClick={[MockFunction]}
+/>
+`;
+
+exports[`Button renders a default, disabled button 1`] = `
+<button
+  className="Button "
+  disabled={true}
+/>
+`;
+
+exports[`Button renders a delete button 1`] = `
+<button
+  className="Button--delete "
+  onClick={[MockFunction]}
+/>
+`;
+
+exports[`Button renders a small delete button 1`] = `
+<button
+  className="Button--delete Button--small"
+  onClick={[MockFunction]}
+/>
+`;
+
+exports[`Button renders an add button 1`] = `
+<button
+  className="Button--add "
+  onClick={[MockFunction]}
+/>
+`;

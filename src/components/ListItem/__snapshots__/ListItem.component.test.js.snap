@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem renders a regular list item 1`] = `
+<li
+  className="ListItem"
+  data-test-selector="list-item"
+  id="test-id"
+  onClick={undefined}
+>
+  Item: 
+  test-id
+</li>
+`;
+
+exports[`ListItem renders a selected list item 1`] = `
+<li
+  className="ListItem--selected"
+  data-test-selector="list-item"
+  id="test-id"
+  onClick={undefined}
+>
+  Item: 
+  test-id
+</li>
+`;
