@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import './ListItem.css'
+import './ListItem.scss'
 
 const ListItem = ({ itemId, selected, onItemClicked }) => {
   const className = selected ? 'ListItem--selected' : 'ListItem'

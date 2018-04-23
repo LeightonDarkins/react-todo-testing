@@ -8,54 +8,54 @@
   font-weight: bold;
   border-radius: 5px;
   display: block;
-  margin: 2.5px 0 2.5px 0;
-}
+  margin: 2.5px 0;
 
-.Button:hover {
-  background-color: #081958;
-  cursor: pointer;
-}
+  &:hover {
+    background-color: #081958;
+    cursor: pointer;
+  }
 
-.Button:focus {
-  outline: 0;
-  border: 2px solid #081958;
-}
+  &:focus {
+    outline: 0;
+    border: 2px solid #081958;
+  }
 
-.Button:disabled {
-  pointer-events: none;
-  background-color: grey;
-}
+  &:disabled {
+    pointer-events: none;
+    background-color: grey;
+  }
 
-.Button--add {
-  @extend .Button;
+  &--small {
+    @extend .Button;
 
-  background-color: #74BA00;
-}
+    width: 175px;
+  }
 
-.Button--add:hover {
-  background-color: #529800;
-}
+  &--add {
+    @extend .Button;
 
-.Button--add:focus {
-  border: 2px solid #529800;
-}
+    background-color: #74BA00;
 
-.Button--delete {
-  @extend .Button;
+    &:hover {
+      background-color: #529800;
+    }
 
-  background-color: #FF5916;
-}
+    &:focus {
+      border: 2px solid #529800;
+    }
+  }
 
-.Button--delete:hover {
-  background-color: #DD3704;
-}
+  &--delete {
+    @extend .Button;
 
-.Button--delete:focus {
-  border: 2px solid #DD3704;
-}
+    background-color: #FF5916;
 
-.Button--small {
-  @extend .Button;
+    &:hover {
+      background-color: #DD3704;
+    }
 
-  width: 175px;
+    &:focus {
+      border: 2px solid #DD3704;
+    }
+  }
 }

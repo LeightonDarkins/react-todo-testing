@@ -1,0 +1,22 @@
+.ListItem {
+  color: black;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border-bottom: 1px solid #223366;
+  margin-bottom: 5px;
+
+  &:hover {
+    color: white;
+    cursor: pointer;
+    background-color: #223366;
+  }
+
+  &--selected {
+    @extend .ListItem;
+
+    color: white;
+    background-color: #8899CC;
+  }
+}
