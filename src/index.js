@@ -9,6 +9,7 @@ import ClockContainer from './containers/ClockContainer/ClockContainer.jsx'
 import SmallClock from './components/Clock/SmallClock.jsx'
 import LargeClock from './components/Clock/LargeClock.jsx'
 import addCounting from './components/Clock/HOC.jsx'
+import { CheckBox, StatefulCheckBox } from 'leightondarkins-react-library'
 
 let store = createStore(TodoListReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
@@ -23,6 +24,8 @@ const App = () => {
       <ClockContainer time={new Date()} render={(props) => <LargeClock {...props} />} />
       <SmallClockWithCounting />
       <LargeClockWithCounting />
+      <CheckBox label='test' onChange={() => {}} checked />
+      <StatefulCheckBox label='test' onChange={() => {}} />
     </div>
   )
 }
